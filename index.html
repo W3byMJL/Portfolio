@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WWWebs by Mitchell</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<link rel="stylesheet" href="">
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Roboto&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+    padding: 50px;
+}
+
+p {
+    
+    font-size: 16px;
+}
+
+
+    /*font, p and h styling*/
+
+h2 {border-bottom: 2px solid #536878;}
+
+
+section {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*lightsaber*/
+
+.lsflexcont {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lsflexitem {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 800px){
+  .lsflexcont {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .lsflexitem {
+    flex-grow: 1;
+  }
+}
+
+/*fem grid*/
+
+
+.item1 {grid-area: item1;}
+
+.item2 { grid-area: item2;}
+
+.item3 { grid-area: item3;}
+
+.item4 { grid-area: item4;}
+
+.item5 { grid-area: item5;}
+
+.item6 { grid-area: item6;}
+
+
+/*for mobile*/
+
+.gridcont {
+   
+ display: grid;
+ gap: 10px;
+ 
+ 
+ padding: 5px;
+ grid-template-areas:
+'item1' 
+'item2'
+'item3'
+'item4'
+'item5'
+'item6';
+
+}
+
+@media only screen and (min-width: 800px){
+/*for desktop*/
+
+.gridcont {
+ grid-template-areas:
+'item1 item1'
+'item2 item2'
+'item3 item5' 
+'item4 item6';
+}
+}
+
+
+
+.gridcont > div {
+ 
+ text-align: center;
+ padding: 5px 0;
+ font-size: 30px;
+}
+
+/*flexgraham*/
+
+
+aside {
+    max-width: 1fr;
+    padding: 25px;
+}
+
+
+/*basic flex container, mobile display as column*/
+
+.postitcontainer {
+    margin: auto;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.postittext {
+        font-size: 8px;
+    }
+
+
+.post-it-note {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top:16px;
+    padding-bottom:16px;
+    padding-left:8px;
+    padding-right:8px;
+    background-color:#2c75ff;
+    box-shadow: 0px 2px 2px 3px #dadada;
+    -webkit-transform:rotate(-4deg);
+    -o-transform:rotate(-4deg);
+    -moz-transform:rotate(-4deg);
+    width:480px;
+    height:240px;
+}
+
+
+
+
+.flexgrahamcont {
+    margin: auto;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+
+
+.flexgrahamitem {
+    flex: 100%;
+    max-width: 100%;
+    padding: 15px;
+    /*border: 2px solid black;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #2c75ff;
+    box-shadow: 0px 2px 2px 3px #dadada;
+}
+
+.flexgrahamlink {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;;
+}
+
+
+img {
+    /*width: 500px;*/
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    width: 1fr;
+}
+
+
+@media (min-width: 800px) {
+
+    .postittext {
+        font-size: 16px;
+    }
+
+    .flexgrahamcont{
+        margin: auto;
+        gap: 1.5rem;
+        justify-content: center;
+    }
+
+    .flexgrahamitem {
+        flex: 30%;
+        max-width: 30%;
+    }
+
+}
+
+/*projects*/
+
+/*about*/
+
+/*Cert Container*/
+
+.certcontainer {
+  margin: auto;
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  }
+
+.divx {
+  background-color: #536878;
+  width: 75%;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+    .certcontainer {
+        display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+    }
+
+    .divx {
+       width: 40%;
+    }
+
+    
+}
+
+
+
+</style>
+
+<body>
+
+    <header class="hero">
+            <h1>Hi there! I'm Mitchell. Aspiring Front End Web Developer. </h1>
+
+            <p>I've been exploring the world of HTML and CSS through: online tutorials, W3 Schools, Front End Mentor, as well as finding interesting things to code.</p>
+           
+            <p>Take a look at some of my <a href="#projects">projects</a>, learn more <a href="#about">about me</a> or <a href="#contact">reach out</a> and lets 
+                see if there something we can collaborate on.</p>
+
+                <p>                
+                    My diverse skill set, combined with my entrepreneurial spirit, make me a dynamic and adaptable professional ready
+                    to contribute to new challenges and opportunities.
+                </p>
+
+                <h2 style="border-bottom: 1px solid black;" id="contact">Contact Me</h2>
+    <p><span>Phone: 509-951-6887</span> | <span>Email: <a href="mailto:lazore.m.j@gmail.com">lazore.m.j@gmail.com</a></span></p>
+    <p>
+        Check out my GitHub Repositories:
+    <a href="https://github.com/W3byMJL">W3 by MJL</a>
+    </p>
+
+            
+    </header>
+
+    <nav></nav>
+
+    <main>
+
+        <section class="lightsaber">
+            <h2 id="projects">Areas of Competency</h2>
+            <div class="lsflexcont">
+                <div class="lsflexitem" style="background-color: #7df9ff;"><p>HTML & CSS</p></div>
+                <div class="lsflexitem" style="background-color: #2c75ff;"><p>Responsive Web Design</p></div>
+                <div class="lsflexitem" style="background-color: #3137fd;"><p>Flexbox & Grid</p></div>
+                <div class="lsflexitem" style="background-color: #035096;"><p>Semantic vs Div</p></div>
+                <div class="lsflexitem" style="background-color: #536878;"><p>HTML Email Signatures</p></div>
+            </div>
+        </section>
+
+        <section class="femgrid">
+            <h2>Front End Mentor Examples</h2>
+     
+            <div class="gridcont">
+                <div class="item1">
+                <a href="https://w3bymjl.github.io/TestimonialGrid/">
+                    <picture>
+                    <source media="(min-width:600px)" srcset="images/FEM1horiz.JPG" style="max-width: 100%; height: auto;"> <!--944x626-->
+                    <img src="images/FEM1vert.JPG" style="max-width: 100%; height: auto;"> <!--192x708-->
+                    </picture> 
+                </a> 
+                </div>
+                <div class="item2">
+                <p>
+                    This was my first real foray into CSS Grid. I only ended up with a mobile and desktop view with media queries.
+                    But I used the "grid-template-area" method and found it to be pretty straightforward.
+                </p>
+                </div>
+                <div class="item3">
+                <a href="https://w3bymjl.github.io/3-column-preview-card/">
+                    <picture>
+                    <source media="(min-width:600px)" srcset="images/3colwide.JPG" style="max-width: 100%; height: auto;"> <!--673x386-->
+                    <img src="images/3coltall.JPG" style="max-width: 100%; height: auto;"> <!--150x670-->
+                    </picture>
+                </a>
+                </div>
+                <div class="item4">
+                <p>My goal with this challenge was to make the card responsive and switch between a vertical and horizontal
+                    layout. I achieved it with CSS floats and a media query. I was also introduced to hover states for links.
+                </p>
+                </div>
+                <div class="item5">
+                <a href="https://w3bymjl.github.io/ResultsSummaryComponentMain/">
+                    <picture>
+                        <img src="images/ResultsSummaryComponentMainFinalMJL.JPG" style="max-width: 100%; height: auto;"> <!--854x594-->
+                    </picture>
+                </a>
+                </div>
+                <div class="item6">
+                    <p>This was one of my first Front End Mentor challenges. I learned a lot about 
+                    margins and padding, and I was pretty new so I tried many things and found a lot of them not to work simply 
+                    because I didn't know what I didn't know. The hardest part for me at the time was getting the summary to display
+                    the icon, title and score. I tried floating, but couldn't get it right, and eventually I defaulted to using
+                    a table and got everything to how I wanted it. I was unaware of resposive web design during this phase,
+                    so the resulting product does not stack.
+                    </p>
+                </div>
+            </div>    
+           
+
+        </section>
+
+        <section >
+            <h2>Inventor's Web Page</h2>
+
+            <div class="postitcontainer">
+                <div class="post-it-note">
+                    <h3>Background</h3>
+                    <p class="postittext">
+                    I've known Graham since 2014, and have known of his background in breakthrough energy research. Visting his home lab
+                    I was able to see some of his work, as well as learning about presentations at conferences. After we both departed that previous
+                    job, he and I remained friends and I would see some of his social media posts.After I dove into learning
+                    web development, I reached out and asked if I could build a web presence for his invention. We had good talks about how to showcase the research
+                    and the invention without giving away "the secret sauce". Below you will find 3 iterations of a website I built for him. 
+                    </p>
+                </div> 
+                <div class="post-it-note">
+                    <h3>Lessons Learned</h3>
+                    <ul>
+                        <li class="postittext">People don't always know what they want in terms of layout, colors etc. Very often they have a vision
+                            but don't know how to articulate this into clear marching orders. You have to show them options.
+                        </li>
+                        <li class="postittext">The faster you fail at prototyping a product, the faster you can come up
+                            with a product that you like. I tried to use this approach with using my own imagination, pre-built templates, and artificial 
+                            intelligence to come up with mock ups to help stear a direction.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flexgrahamcont">
+                <article class="flexgrahamitem">
+                    <h3>First Round</h3>
+                    <p style="max-width: 500px; margin:auto;">
+                        I remember Graham would get circuit boards made, and they were typically a purple - so I started with a purple and yellow theme to capture the this vision of circuit boards.
+                        I wanted a one page layout with a top navigation menu that would let you click and jump to the various sections with "id" attribute. I visited his lab, took a few pictures and 
+                        created a quick mock up site to showcase some of his inventions and as a way to get people interested and hopefully donate to the research.
+                        color. 
+                    </p>
+                    <a href="https://w3bymjl.github.io/EternalOnVersion2.0/" >
+                        <img src="images/EterOnFirst.JPG" class="imgfirst flexgrahamlink">
+                    </a>
+                                        
+                </article>
+            
+                
+                <article class="flexgrahamitem">
+                    <h3>Second Round</h3>
+                    <p style="max-width: 500px; margin:auto;">After the first version was out and to him for review I wanted to contrast that with a few other layout options. One was a more classic black and 
+                        white "blog" style utilizing a prebuild template. The second style was developed consulting Chat GPT. First I wanted some brand ideas for a color scheme that would be suitable 
+                        for a renewable/breakthrough energy company. Chat GPT delivered a few suggestions and why those colors represent something I should choose. I also asked for help with a simple
+                        HTML/CSS layout as well as code for some other things like a bio section and donation button, and I used Chat GPT to help craft some of wording for the various content
+                        I wanted to include. </p>
+                        <h4>Blog Layout</h4>
+                        <a href="https://w3bymjl.github.io/EternalOn2.2W3/">
+                            <img src="images/EternOnW3Blog.JPG" class="imgW3 flexgrahamlink" >
+                        </a>
+                        <h4>AI Assistance</h4>
+                        <a href="https://w3bymjl.github.io/EternalOn2.3AI/">
+                            <img src="images/EterOnAIColor.JPG" class="imgAIcolor flexgrahamlink">
+                        </a>
+                        
+                </article>
+            
+                <article class="flexgrahamitem">
+                    <h3>Third Iteration</h3>
+                    <p style="max-width: 500px; margin:auto;">After consulting with Graham on some branding ideas around color, and getting limited feedback on site layout, I suggest we run with a third layout that I found. I sent Grahama
+                        a picture of the layout, but ultimately we put a pause on publishing a web site as he needed to focus on the product development and is trying to setup a live demonstration with
+                        some engineers and other investors to get things really rolling.
+                    </p>
+                    <a href="https://w3bymjl.github.io/EternalOn3.1/">
+                        <img src="images/EternOnLatest.JPG" class="imglatest flexgrahamlink"> 
+                    </a>
+                    
+                </article>  
+            </div>
+            
+
+            
+            
+        </section>
+
+        <section class="projects">
+            <h2>Adventures in Nested Tables</h2>
+            <article class="projectspersonal">
+                <p>HTML and nested tables was something I was exploring early on. I wanted to code email signatures for people. I saw a number of requests on freelancing
+                    websites so I took a stab at it. My friend Caleb is the recipient of this email signature, and I figured 
+                how to get it load onto his iPhone signature. Unfortunately, I'm still struggling to get it onto his Mac. Apparently the Mac Mail application
+                seems to overwrite a lot of the custom HTML. If you have found a solution for that I sure would like to know!
+                </p>
+            </article>
+
+            <table cellpadding="0" cellspacing="0" style="margin: auto;">
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: middle; text-align: center;">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/oyhpt-email-signature-107f5.appspot.com/o/OYHLowResNoBackground.png?alt=media&token=a8a995cd-5e89-4e18-8a37-519e918ad0ff" style="height: 75px; width: auto; margin: 0px;" alt="OYHPT Logo">
+                        </td>
+            
+                        <td width="10"> <!--blank cell, fixed width-->
+                        </td>
+            
+                        <td color="hsla(0,73.87755102040816%,51.9607843137255%,1)" direction="vertical" height="auto" style="width: 2px; border-bottom: none; border-right: none; border-left: 2px solid hsla(0,73.87755102040816%,51.9607843137255%,1);"></td> <!--vertical red bar-->
+                        </td>
+            
+                        <td width="10"> <!--blank cell, fixed width-->
+                        </td>
+                     
+                        <td width="173px">
+                            <table cellpadding="0" cellspacing="0" style="width: 173px;">
+                                <tbody>
+                                    <tr style="line-height: 15px;">
+                                        <td style="vertical-align: middle;">
+                                            <h2 style="font-size: 15px; font-family: Times New Roman, Times, serif; padding: 0px; margin: 0px;">Caleb Dotson, PT, DPT</h2>
+                                        </td>
+                                    </tr>
+                                    <tr style="line-height: 15px;">
+                                        <td style="vertical-align: middle;">
+                                            <p style="font-size: 11px; font-family: Times New Roman, Times, serif; padding: 0px; margin: 0px;">ASTYM Cert., BYT Certified Coach</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="line-height: 15px;">
+                                        <td style="vertical-align: middle;">
+                                            <a href="tel: 5093502506" style="text-decoration:none; font-size: 11px; font-family: Times New Roman, Times, serif; color: black;">(509) 350-2506</a>
+                                        </td>
+                                    </tr>
+                                    <tr style="line-height: 15px;">
+                                        <td style="vertical-align: middle;"> 
+                                            <a href="http://www.OYHPT.com" style="text-decoration:none; font-size: 11px; font-family: Times New Roman, Times, serif; color: black;">www.OYHPT.com</a>
+                                        </td>
+                                    </tr>
+                                    <tr style="line-height: 15px;">
+                                        <td style="vertical-align: middle;">
+                                            <a href="mailto:cdotson@oyhpt.com" style="text-decoration:none; font-size: 11px; font-family: Times New Roman, Times, serif; color: black;">cdotson@oyhpt.com</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>              
+                    </tr>
+            
+                </tbody>
+            
+            </table>
+    
+        </section>
+
+        <section class="about">
+            <h2 style="border-bottom: 1px solid black;" id="about">About Me</h2>
+            <p>Originally from Florida, I relocated to Spokane, WA in 2005 to pursue a degree in physics and engineering.
+                During my college years, I gained valuable experience as a sound technician.
+                Upon graduation, I took a job in the aerospace industry, where I specialized in reverse engineering defective components.
+                My responsibilities included utilizing CAD/3D modeling software and developing comprehensive repair manuals.
+            </p>
+                   
+
+            <p>After 12 years in this field, and partly in response to the challenges posed by the 2019 COVID pandemic, 
+                I transitioned to a role at the Idaho Transportation Department. In this capacity, I conducted inspections on highway construction projects, 
+                contributed to the creation of drawings for future road initiatives using CAD software, 
+                managed contracts for materials testing, and served as an assistant project manager for a 
+                significant interchange project in the region.
+            </p>
+
+            <p>
+                In addition to my professional endeavors, I have a history of entrepreneurial pursuits. 
+                During my teenage years, I successfully operated a landscaping/handyman business, 
+                providing services such as lawn mowing, cleanouts, and painting.
+                In college I embraced diverse roles, including shuttle bus driver, physics lab supervisor, and church sound technician.
+                Recently, I also worked as a personal trainer for a period of time as well as being a groundskeep for a 55+ retirement 
+                apartment community, providing after hours support to the tenants in addition to the grounds.
+                I thrive on variety and seek out opportunities aligned with my interests.
+            </p>
+
+            <p>
+                Outside of work, I pursue various activities, including weight lifting, bike riding, hiking, dancing, movies,
+                cooking, baking, and contemplation of life. 
+            </p>
+
+           
+
+  
+            </p>
+            <div style="text-align: center;">
+                <h3 style="text-transform: uppercase;">Certifications</h3>
+            </div>
+            <div class="certcontainer">
+              <div class="divx"><a href="https://verify.w3schools.com/1O9PBCSCD1"><img src="images/HTMLCertMJL.JPG" alt="HTML Certificate" ></a></div>
+              <div class="divx"><a href="https://verify.w3schools.com/1O9PBCSCD1"><img src="images/CSSCertMJL.JPG" alt="CSS Certificate" ></a></div>
+            </div>
+               
+           
+            
+        </section>
+       
+    </main>
+
+</body>
+
+<footer>
+    
+
+</footer>
+
+</html>
